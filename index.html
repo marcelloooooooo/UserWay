@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Online</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catálogo de Jogos Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Inclusão do script UserWay para acessibilidade -->
+    <script>
+        (function (d) {
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "INSIRA_SEU_CÓDIGO_USERWAY_AQUI");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document);
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Jogos Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="games">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/150" alt="Imagem do Jogo 1">
+                    <h2>Jogo 1</h2>
+                    <p>Ação emocionante, gráficos incríveis.</p>
+                    <p>R$ 99,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/150" alt="Imagem do Jogo 2">
+                    <h2>Jogo 2</h2>
+                    <p>Aventura épica com vários personagens.</p>
+                    <p>R$ 149,90</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/150" alt="Imagem do Jogo 3">
+                    <h2>Jogo 3</h2>
+                    <p>Desafios estratégicos para os mais experientes.</p>
+                    <p>R$ 79,90</p>
+                    <button>Comprar</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por: Marcello Ribeiro Silva</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        flex: 1;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .games {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .game-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .game-card img {
+        margin-bottom: 10px;
+    }
+
+    .game-card button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .game-card button:hover {
+        background-color: #218838;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
